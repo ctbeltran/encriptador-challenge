@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es-419">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador Challenge | Alura</title>
+    <!--CSS Libraries -->
+    <link rel="stylesheet" type="text/css" href="./dist/css/styles.css">
+</head>
+<body class="bg-light-blue-100">
+    <header>
+        <nav>
+            <div class="container mx-auto px-4 py-6">
+                <img src="./dist/img/logo-alura.svg" width="32" height="48" alt="logo Alura">           
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container mx-auto px-4 py-6 xl:flex xl:flex-row xl:gap-6">
+            <div class="container-form">
+                <form id="inputMessageContainer" class="xl:w-3/4 xl:ml-auto xl:mr-auto" action="">
+                    <textarea id="inputMessage" class="bg-transparent w-full h-80 xl:h-[480px] font-sans text-3xl font-normal text-dark-blue-300 focus:outline-none" name="inputMessage" autofocus>Ingrese el texto aquí</textarea>
+                </form>
+                <div class="flex items-center xl:w-3/4 xl:ml-auto xl:mr-auto">
+                    <img src="./dist/img/icon-warning.svg" width="16" height="16" alt="icono de alerta">                    
+                    <p class="text-xs px-2">Solo letras minúsculas y sin acentos</p>
+                </div>
+                <div class="mt-4 flex flex-col gap-6 items-center md:flex-row justify-center xl:w-3/4 xl:ml-auto xl:mr-auto">
+                    <a href="#" type="button" id="btnEncrypte" class="w-full text-center py-6 border border-solid rounded-3xl border-dark-blue-300  bg-dark-blue-300 hover:bg-[#072B61] transition-all text-white">Encriptar</a>
+                    <a href="#" type="button" id="btnDecrypte" class="w-full text-center py-6 border border-solid rounded-3xl border-dark-blue-300  bg-transparent hover:bg-light-blue-200 transition-all  text-dark-blue-300">Desencriptar</a>
+                </div>
+            </div>
+            <div id="outputMessageContainer" class="xl:flex flex-col justify-center items-center container-output bg-white w-full px-8 py-8 mt-20 xl:mt-0 shadow-primary rounded-3xl">
+                <img id="outputMessageImage" class="hidden xl:inline" width="336" height="304" src="./dist/img/muñeco.svg" alt="busqueda de msnaje">                
+                <h2 id="outputMessageTitle" class="font-bold text-2xl text-center text-gray-500">Ningún mensaje fue encontrado</h2>
+                <p id="outputMessageText" class="mt-4 text-gray-400 text-center">Ingresa el texto que desees encriptar o desencriptar.</p>
+                <p id="outputMessage" class="hidden mt-4 font-sans text-3xl font-normal text-dark-blue-300 text-center"></p>
+                <a href="#" type="button" id="btnCopy" class="w-full hidden text-center mt-6 py-6 border border-solid rounded-3xl border-dark-blue-300  bg-transparent hover:bg-light-blue-200 transition-all text-dark-blue-300">Copiar</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        
+    </footer>
+    <script src="./dist/js/scripts.js"></script>
+</body>
+</html>
+
