@@ -33,6 +33,13 @@ messageDesencrypte = () => {
     let message = inputMessage.value;    
     let messageDesencrypte = message.replace(/enter/g, "e").replace(/imes/g, "i").replace(/ai/g, "a").replace(/ober/g, "o").replace(/ufat/g, "u");
     
+    outputMessageContainer.classList.remove('justify-center');
+    outputMessageContainer.classList.add('justify-between');      
+    outputMessage.classList.remove('hidden');
+    btnCopy.classList.remove('hidden');
+    outputMessageTitle.classList.add('hidden');
+    outputMessageText.classList.add('hidden');
+    outputMessageImage.classList.remove('xl:inline');
     outputMessage.innerHTML = messageDesencrypte;
     clearTextArea();
 }
